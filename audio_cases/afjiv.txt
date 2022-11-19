@@ -1,0 +1,281 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+xmin = 0
+xmax = 151.248000
+tiers? <exists>
+size = 5
+item []: 
+    item [0]:
+ 
+        class = "IntervalTier"  
+        name = "spk00"  
+        xmin = 0  
+        xmax = 151.248000  
+        intervals: size = 3  
+        intervals [0]:
+            xmin = 41.119999999999997 
+            xmax = 80.479999999999990 
+            text = "speech" 
+        intervals [0]:
+            xmin = 0 
+            xmax = 41.119999999999997 
+            text = "" 
+            xmin = 80.479999999999990 
+            xmax = 151.247999999999990 
+            text = "" 
+    item [1]:
+ 
+        class = "IntervalTier"  
+        name = "spk01"  
+        xmin = 0  
+        xmax = 151.248000  
+        intervals: size = 23  
+        intervals [0]:
+            xmin = 119.439999999999998 
+            xmax = 122.319999999999993 
+            text = "speech" 
+        intervals [1]:
+            xmin = 122.959999999999994 
+            xmax = 124.559999999999988 
+            text = "speech" 
+        intervals [2]:
+            xmin = 125.200000000000003 
+            xmax = 128.400000000000006 
+            text = "speech" 
+        intervals [3]:
+            xmin = 128.479999999999990 
+            xmax = 129.639999999999986 
+            text = "speech" 
+        intervals [4]:
+            xmin = 130.879999999999995 
+            xmax = 133.519999999999982 
+            text = "speech" 
+        intervals [5]:
+            xmin = 133.680000000000007 
+            xmax = 134.120000000000005 
+            text = "speech" 
+        intervals [6]:
+            xmin = 135.719999999999999 
+            xmax = 138.159999999999997 
+            text = "speech" 
+        intervals [7]:
+            xmin = 138.919999999999987 
+            xmax = 140.479999999999990 
+            text = "speech" 
+        intervals [8]:
+            xmin = 140.639999999999986 
+            xmax = 141.639999999999986 
+            text = "speech" 
+        intervals [9]:
+            xmin = 142.199999999999989 
+            xmax = 144.319999999999993 
+            text = "speech" 
+        intervals [10]:
+            xmin = 144.599999999999994 
+            xmax = 145.319999999999993 
+            text = "speech" 
+        intervals [0]:
+            xmin = 0 
+            xmax = 119.439999999999998 
+            text = "" 
+            xmin = 122.319999999999993 
+            xmax = 122.959999999999994 
+            text = "" 
+        intervals [1]:
+            xmin = 124.559999999999988 
+            xmax = 125.200000000000003 
+            text = "" 
+        intervals [2]:
+            xmin = 128.400000000000006 
+            xmax = 128.479999999999990 
+            text = "" 
+        intervals [3]:
+            xmin = 129.639999999999986 
+            xmax = 130.879999999999995 
+            text = "" 
+        intervals [4]:
+            xmin = 133.519999999999982 
+            xmax = 133.680000000000007 
+            text = "" 
+        intervals [5]:
+            xmin = 134.120000000000005 
+            xmax = 135.719999999999999 
+            text = "" 
+        intervals [6]:
+            xmin = 138.159999999999997 
+            xmax = 138.919999999999987 
+            text = "" 
+        intervals [7]:
+            xmin = 140.479999999999990 
+            xmax = 140.639999999999986 
+            text = "" 
+        intervals [8]:
+            xmin = 141.639999999999986 
+            xmax = 142.199999999999989 
+            text = "" 
+        intervals [9]:
+            xmin = 144.319999999999993 
+            xmax = 144.599999999999994 
+            text = "" 
+        intervals [10]:
+            xmin = 145.319999999999993 
+            xmax = 151.247999999999990 
+            text = "" 
+    item [2]:
+ 
+        class = "IntervalTier"  
+        name = "spk02"  
+        xmin = 0  
+        xmax = 151.248000  
+        intervals: size = 11  
+        intervals [0]:
+            xmin = 80.920000000000002 
+            xmax = 83.719999999999999 
+            text = "speech" 
+        intervals [1]:
+            xmin = 84.840000000000003 
+            xmax = 86.079999999999998 
+            text = "speech" 
+        intervals [2]:
+            xmin = 87.079999999999998 
+            xmax = 88.000000000000000 
+            text = "speech" 
+        intervals [3]:
+            xmin = 88.719999999999999 
+            xmax = 93.039999999999992 
+            text = "speech" 
+        intervals [4]:
+            xmin = 93.079999999999998 
+            xmax = 94.359999999999999 
+            text = "speech" 
+        intervals [0]:
+            xmin = 0 
+            xmax = 80.920000000000002 
+            text = "" 
+            xmin = 83.719999999999999 
+            xmax = 84.840000000000003 
+            text = "" 
+        intervals [1]:
+            xmin = 86.079999999999998 
+            xmax = 87.079999999999998 
+            text = "" 
+        intervals [2]:
+            xmin = 88.000000000000000 
+            xmax = 88.719999999999999 
+            text = "" 
+        intervals [3]:
+            xmin = 93.039999999999992 
+            xmax = 93.079999999999998 
+            text = "" 
+        intervals [4]:
+            xmin = 94.359999999999999 
+            xmax = 151.247999999999990 
+            text = "" 
+    item [3]:
+ 
+        class = "IntervalTier"  
+        name = "spk03"  
+        xmin = 0  
+        xmax = 151.248000  
+        intervals: size = 7  
+        intervals [0]:
+            xmin = 5.280000000000000 
+            xmax = 34.519999999999996 
+            text = "speech" 
+        intervals [1]:
+            xmin = 34.680000000000000 
+            xmax = 40.079999999999998 
+            text = "speech" 
+        intervals [2]:
+            xmin = 40.119999999999997 
+            xmax = 40.960000000000001 
+            text = "speech" 
+        intervals [0]:
+            xmin = 0 
+            xmax = 5.280000000000000 
+            text = "" 
+            xmin = 34.519999999999996 
+            xmax = 34.680000000000000 
+            text = "" 
+        intervals [1]:
+            xmin = 40.079999999999998 
+            xmax = 40.119999999999997 
+            text = "" 
+        intervals [2]:
+            xmin = 40.960000000000001 
+            xmax = 151.247999999999990 
+            text = "" 
+    item [4]:
+ 
+        class = "IntervalTier"  
+        name = "spk04"  
+        xmin = 0  
+        xmax = 151.248000  
+        intervals: size = 17  
+        intervals [0]:
+            xmin = 95.120000000000005 
+            xmax = 98.000000000000000 
+            text = "speech" 
+        intervals [1]:
+            xmin = 98.719999999999999 
+            xmax = 100.439999999999998 
+            text = "speech" 
+        intervals [2]:
+            xmin = 101.120000000000005 
+            xmax = 104.600000000000009 
+            text = "speech" 
+        intervals [3]:
+            xmin = 105.560000000000002 
+            xmax = 107.079999999999998 
+            text = "speech" 
+        intervals [4]:
+            xmin = 107.159999999999997 
+            xmax = 107.599999999999994 
+            text = "speech" 
+        intervals [5]:
+            xmin = 108.159999999999997 
+            xmax = 110.039999999999992 
+            text = "speech" 
+        intervals [6]:
+            xmin = 111.000000000000000 
+            xmax = 113.280000000000001 
+            text = "speech" 
+        intervals [7]:
+            xmin = 113.840000000000003 
+            xmax = 118.120000000000005 
+            text = "speech" 
+        intervals [0]:
+            xmin = 0 
+            xmax = 95.120000000000005 
+            text = "" 
+            xmin = 98.000000000000000 
+            xmax = 98.719999999999999 
+            text = "" 
+        intervals [1]:
+            xmin = 100.439999999999998 
+            xmax = 101.120000000000005 
+            text = "" 
+        intervals [2]:
+            xmin = 104.600000000000009 
+            xmax = 105.560000000000002 
+            text = "" 
+        intervals [3]:
+            xmin = 107.079999999999998 
+            xmax = 107.159999999999997 
+            text = "" 
+        intervals [4]:
+            xmin = 107.599999999999994 
+            xmax = 108.159999999999997 
+            text = "" 
+        intervals [5]:
+            xmin = 110.039999999999992 
+            xmax = 111.000000000000000 
+            text = "" 
+        intervals [6]:
+            xmin = 113.280000000000001 
+            xmax = 113.840000000000003 
+            text = "" 
+        intervals [7]:
+            xmin = 118.120000000000005 
+            xmax = 151.247999999999990 
+            text = "" 
