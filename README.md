@@ -7,7 +7,7 @@ There lacks a diarization visualization tool that is essential for analyzing dat
 
 ## Audio-only tutorials
 
-### Step 1: Run:
+### Step 1: Generating praat format:
 
 ```
 python audio_visualized.py -rttm audio_cases/afjiv.rttm -audio_path audio_cases/afjiv.wav -praat_result audio_cases/afjiv.txt
@@ -17,9 +17,9 @@ python audio_visualized.py -rttm audio_cases/afjiv.rttm -audio_path audio_cases/
 * ``audio_path`` --- the audio path
 * ``praat_result`` --- visualized result for praat software
 
-(Example is from [URL](https://github.com/joonson/voxconverse))
+(Example is from [VoxConverse](https://github.com/joonson/voxconverse))
 
-### Step 2: import ``praat_result`` into Praat:
+### Step 2: Import ``praat_result`` into Praat:
 - Install Praat [Mac](https://www.fon.hum.uva.nl/praat/download_mac.html) or [Windows](https://www.fon.hum.uva.nl/praat/download_win.html)
 - import ``praat_result`` into Praat 
     - Open ``praat_result`` and ``audio``
@@ -40,8 +40,34 @@ Some usefull shortcuts:
 
 ## Audio-visual tutorials
 
-**TODO**
+### Step 1: Generating VIA format
 
-We will update soon.
+```
+python audio_visual_visualized.py -rttm audio_visual_cases/00115.rttm -mp4_path audio_visual_cases/00115.rttm -via_json_result audio_visual_cases/00115.json
+```
+
+* ``rttm`` --- the reference or system rttm 
+* ``mp4_path`` --- the mp4 path
+* ``via_json_result`` --- visualized result for VIA software
+
+(Example is from [MSDWild](https://github.com/X-LANCE/MSDWILD))
+
+> If the video cannot be previewed or quickly previewed, please try to convert them to support specific mp4 format of HTML5.
+> ```
+> ffmpeg -i original.mp4 -vcodec libx264 -acodec aac -preset fast -movflags +faststart  previewed.mp4
+> ```
+
+### Step 2: Import ``via_format.json`` into VIA tools
+
+- Download ``via_video_annotator.html`` from [URL](https://www.robots.ox.ac.uk/~vgg/software/via/downloads/via3/via-3.0.11.zip) or directly use a [online demo](https://www.robots.ox.ac.uk/~vgg/software/via/demo/via_video_annotator.html). This website is a offline client and we have tested on version ``via-3.0.11``(also see file: ``via_video_annotator_3.0.11.html`` in this repo).
+- Import json by clicking the ``folder button`` as follows:
+- <img src='imgs/via_import.png' width=90% />
+
+### Step3: Overview
 
 ![](imgs/via_example.png)
+
+References
+=========
+- https://www.fon.hum.uva.nl/praat/
+- https://www.robots.ox.ac.uk/~vgg/software/via/
