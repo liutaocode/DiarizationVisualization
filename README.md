@@ -1,11 +1,16 @@
 # Visualization Tools for Speaker Diarization
 ## Introduction
 
-There lacks a diarization visualization tool that is essential for analyzing dataset or algorithm results. In this repo, we provide convenient ways to visualize speaker diarization results. One criterion for choosing this visualization software is to support interactive operation. Although those visualization tools could be better, we can not find a better replacement.
+There lacks a diarization visualization tool that is essential for analyzing dataset or algorithm results. In this repo, we provide convenient ways to visualize speaker diarization results. One criterion for choosing this visualization software is to support interactive operation. Although those visualization tools are not perfect, we can not find a better replacement currently.
+
+[Go to: Visualization tool for Audio-only datasets ](#anchor_ao) 
+
+[Go to: Visualization tool for Audio-visual datasets ](#anchor_av) 
 
 
+<p id="anchor_ao"></p>  
 
-## Visualization for Audio-only datasets
+## Visualization for Audio-only datasets 
 
 ### Step 1: Generating praat format:
 
@@ -37,6 +42,8 @@ Some useful shortcuts:
 
 - ``CMD + A``: Show all utterances in one screen.
 - ``CMD + N``: Dive into selected areas.
+
+<p id="anchor_av"></p> 
 
 ## Visualization for Audio-visual datasets
 
