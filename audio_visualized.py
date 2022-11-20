@@ -13,7 +13,6 @@ def get_rttm_dict(rttm_file):
         rttm_dict[spk_name].append((start_time,end_time))
     return rttm_dict
 
-# generating praat format
 def saved_to_text_grid(saved_to_path, current_speaker_num, wav_end_time, spk_dict):
     saved_obj = open(saved_to_path,"w")
     saved_obj.write("File type = \"ooTextFile\"\n")
@@ -22,7 +21,6 @@ def saved_to_text_grid(saved_to_path, current_speaker_num, wav_end_time, spk_dic
     saved_obj.write("xmax = %f\n"%(wav_end_time))
     saved_obj.write("tiers? <exists>\n")
     saved_obj.write("size = %d\n"%(current_speaker_num))
-
     saved_obj.write("item []: \n")
 
     for i, speaker_id in enumerate(list(spk_dict.keys())):

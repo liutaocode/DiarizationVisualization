@@ -1,11 +1,11 @@
-# Visualization Tools for Diarization
+# Visualization Tools for Speaker Diarization
 ## Introduction
 
 There lacks a diarization visualization tool that is essential for analyzing dataset or algorithm results. In this repo, we provide convenient ways to visualize speaker diarization results. One criterion for choosing this visualization software is to support interactive operation. Although those visualization tools could be better, we can not find a better replacement.
 
 
 
-## Audio-only tutorials
+## Visualization for Audio-only datasets
 
 ### Step 1: Generating praat format:
 
@@ -38,7 +38,7 @@ Some usefull shortcuts:
 - ``CMD + A``: Show all utterances in one screen.
 - ``CMD + N``: Dive into selected areas.
 
-## Audio-visual tutorials
+## Visualization for Audio-visual datasets
 
 ### Step 1: Generating VIA format
 
@@ -60,12 +60,19 @@ python audio_visual_visualized.py -rttm audio_visual_cases/00115.rttm -mp4_path 
 ### Step 2: Import ``via_format.json`` into VIA tools
 
 - Download ``via_video_annotator.html`` from [URL](https://www.robots.ox.ac.uk/~vgg/software/via/downloads/via3/via-3.0.11.zip) or directly use a [online demo](https://www.robots.ox.ac.uk/~vgg/software/via/demo/via_video_annotator.html). This website is a offline client and we have tested on version ``via-3.0.11``(also see file: ``via_video_annotator_3.0.11.html`` in this repo).
-- Import json by clicking the ``folder button`` as follows:
-- <img src='imgs/via_import.png' width=90% />
+- Import json by clicking the ``folder button`` as follows:<img src='imgs/via_import.png' width=90% />
+- You can also modify the script to support online URL from OSS (Object Storage Service).
 
 ### Step3: Overview
 
 ![](imgs/via_example.png)
+
+You can use `Space` key to control `Play/Pause Media`.
+
+More keys can be found on:
+
+ <img src='imgs/via_shortcut.png' width=20% />
+ 
 
 References
 =========
