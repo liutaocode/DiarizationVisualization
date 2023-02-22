@@ -33,30 +33,34 @@ def saved_to_text_grid(saved_to_path, current_speaker_num, wav_end_time, spk_dic
         intervals = list(spk_dict[speaker_id])
         intervals.sort()
 
-        saved_obj.write("        intervals: size = %d  \n"%(len(intervals)*2+1))
+        if len(intervals) == 0:
+            saved_obj.write("        intervals: size = 0  \n")
+            continue
 
-        # speech
-        for index, period in enumerate(intervals):
+        all_intervals = []
+        if len(intervals) == 1:
+            all_intervals.append((0, intervals[0][0], ''))
+            all_intervals.append((intervals[0][0], intervals[0][1], 'speech'))
+            all_intervals.append((intervals[0][1], wav_end_time, ''))
+        else:
+            for index, period in enumerate(intervals):
+                if index == 0 :
+                    all_intervals.append((0, period[0], ''))
+                elif index == len(intervals) - 1 :
+                    all_intervals.append((period[1], wav_end_time, ''))
+                else:
+                    all_intervals.append((intervals[index-1][1], period[0], ''))
+                all_intervals.append((period[0], period[1], 'speech'))
+
+        saved_obj.write("        intervals: size = %d  \n"%(len(all_intervals)))
+
+        for index, items in enumerate(all_intervals):
             saved_obj.write("        intervals [%d]:\n"%(index))
-            saved_obj.write("            xmin = %0.15f \n"%(period[0]))
-            saved_obj.write("            xmax = %0.15f \n"%(period[1]))
-            saved_obj.write("            text = \"%s\" \n"%('speech'))
+            saved_obj.write("            xmin = %0.15f \n"%(items[0]))
+            saved_obj.write("            xmax = %0.15f \n"%(items[1]))
+            saved_obj.write("            text = \"%s\" \n"%(items[2]))
 
-        # silence
-        for index, period in enumerate(intervals):
 
-            saved_obj.write("        intervals [%d]:\n"%(index))
-            if index == 0:
-                saved_obj.write("            xmin = 0 \n")
-                saved_obj.write("            xmax = %0.15f \n"%(intervals[index][0]))
-                saved_obj.write("            text = \"\" \n")
-
-            saved_obj.write("            xmin = %0.15f \n"%(intervals[index][1]))
-            if index + 1 > len(intervals) - 1:
-                saved_obj.write("            xmax = %0.15f \n"%(wav_end_time))
-            else:
-                saved_obj.write("            xmax = %0.15f \n"%(intervals[index + 1][0]))
-            saved_obj.write("            text = \"\" \n")
     saved_obj.close()
 
 def main():
