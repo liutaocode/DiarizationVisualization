@@ -48,6 +48,7 @@ def saved_to_text_grid(saved_to_path, current_speaker_num, wav_end_time, spk_dic
                     all_intervals.append((0, period[0], ''))
                 elif index == len(intervals) - 1 :
                     all_intervals.append((period[1], wav_end_time, ''))
+                    all_intervals.append((intervals[index-1][1], period[0], ''))
                 else:
                     all_intervals.append((intervals[index-1][1], period[0], ''))
                 all_intervals.append((period[0], period[1], 'speech'))
