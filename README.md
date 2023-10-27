@@ -1,7 +1,7 @@
 # Visualization Tools for Speaker Diarization
 ## Introduction
 
-There lacks a diarization visualization tool that is essential for analyzing dataset or algorithm results. In this repo, we provide convenient ways to visualize speaker diarization results. One criterion for choosing this visualization software is to support interactive operation. Although those visualization tools are not perfect, we can not find a better replacement currently.
+The current landscape lacks a robust tool for diarization visualization, which is critical for the analysis of datasets and algorithm outcomes. In this repository, we offer intuitive methods to illustrate speaker diarization results. A pivotal criterion for selecting this visualization software was its capacity for interactive operation. While these visualization tools have room for improvement, they are the best available options at present.
 
 [Go to: Visualization tool for Audio-only datasets ](#anchor_ao) 
 
